@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @listing.name %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @listing.category %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @listing.place %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @listing.location %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @listing.active %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @listing.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

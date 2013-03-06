@@ -1,0 +1,36 @@
+<div id="wrap">
+	<div id="header">
+		<a class="iconbtn" href="#"></a>
+		<h4>Places</h4>
+		<a class="filterbtn" href="#">Filter</a>	
+	</div>
+	<!-- header -->
+	<div id="mainbody">		
+			<div class="content listing">
+				<ul>
+<% @listings.each do |listing| %>									
+					<li class="<%= cycle('even', 'odd') -%>">
+						<div class="one-fourth">
+							<img src="images/thumb-img3.jpg" alt="">
+						</div>
+						<div class="two-fourth">
+							<div class="inner">
+                <h2><% listing.name %></h2>
+                <div class="split dark">Type: <%= listing.category %></div>
+                <div class="split"><%= listing.place %></div>
+								<div class="split">3 miles away </div>
+							</div>
+						</div>
+						<div class="one-fourth">
+							<div class="inner">
+                <span class="price"><%= listing.price %></span>
+							</div>
+						</div>
+					</li>
+<% end %> 
+				</ul>
+			</div>
+	</div>
+	<!-- end #mainbody -->
+</div>
+

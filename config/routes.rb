@@ -1,4 +1,7 @@
 Instalodger::Application.routes.draw do
+  resources :listings
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
