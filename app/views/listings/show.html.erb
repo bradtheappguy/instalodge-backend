@@ -1,40 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div id="wrap">
+  <div id="header">
+    <a class="backbtn" href="/listings">Back</a>
+    <h4><%= @listing.name %></h4>  
+  </div>
+  <!-- header -->
+  <div id="mainbody">   
+    <div class="content">
+      <div class="imgwrap">
+        <img src="/assets/sample-img1.jpg" alt="">
+        <span class="price-wt"><%= @listing.price %></span>
+        <h4><a href="mailto:foo@bar.com">Contact Host</a></h4>
+      </div>
+      <div class="gmap">
+        <img src="/assets/gmap.gif" alt="">
+      </div>        
+      <div class="details-content">
+        <div class="inner">
+          <div class="row-split">
+            <div class="label-title">Type</div>
+            <div class="con-des"><p><%= @listing.category %></p></div>
+          </div>
+          
+          <div class="row-split">
+            <div class="label-title">Description</div>
+            <div class="con-des"><p>
+              <%= @listing.description %> 
+              </p></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end #mainbody -->
+  
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @listing.name %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @listing.category %>
-</p>
-
-<p>
-  <b>Place:</b>
-  <%= @listing.place %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @listing.location %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @listing.price %>
-</p>
-
-<p>
-  <b>Active:</b>
-  <%= @listing.active %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @listing.description %>
-</p>
-
-
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to 'Back', listings_path %>
