@@ -9,7 +9,8 @@
 			<div class="content listing">
 				<ul>
 <% @listings.each do |listing| %>									
-					<li class="<%= cycle('even', 'odd') -%>">
+  <a href="<%= url_for listing%>">
+         <li class="<%= cycle('even', 'odd') -%>">
 						<div class="one-fourth">
 							<img src="images/thumb-img3.jpg" alt="">
 						</div>
@@ -26,7 +27,8 @@
                 <span class="price"><%= listing.price %></span>
 							</div>
 						</div>
-					</li>
+            </li>
+          </a>
 <% end %> 
 				</ul>
 			</div>
