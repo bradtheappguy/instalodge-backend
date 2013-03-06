@@ -7,12 +7,12 @@
   <div id="mainbody">   
     <div class="content">
       <div class="imgwrap">
-        <img src="/assets/sample-img1.jpg" alt="">
+        <img src="<%=@listing.location %>" alt="" width="320" height="320">
         <span class="price-wt"><%= @listing.price %></span>
         <h4><a href="mailto:foo@bar.com">Contact Host</a></h4>
       </div>
       <div class="gmap">
-        <img src="<%= @listing.location%>" alt="" width="320" height="320">
+        <img src="/assets/gmap.gif" alt="">
       </div>        
       <div class="details-content">
         <div class="inner">

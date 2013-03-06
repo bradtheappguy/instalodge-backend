@@ -12,8 +12,8 @@
   <a href="<%= url_for listing%>">
          <li class="<%= cycle('even', 'odd') -%>">
 						<div class="one-fourth">
-              <%= image_tag listing.location, :size => "80x80"%>
-						</div>
+              <img src="<%= listing.location %>" width="80" height="80" >
+            </div>
 						<div class="two-fourth">
 							<div class="inner">
                 <h2><%= listing.name %></h2>
